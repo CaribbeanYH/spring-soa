@@ -9,6 +9,8 @@
         <property name="name" value="曹操"/>
     </bean>
 
+    <bean class="com.easy.architecture.constructor.BusinessBeanInitPostProcessor"/>
+
     <!--    &lt;!&ndash; 指定class属性，通过构造方法创建Bean实例 &ndash;&gt;-->
     <!--    <bean id="heroCaoCao" name="heroCaoCao" class="com.easy.architecture.constructor.HeroCaoCao" scope="singleton" init-method="init">-->
     <!--        &lt;!&ndash; 通过调用setName方法，将曹操作为参数传入 &ndash;&gt;-->

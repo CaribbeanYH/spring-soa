@@ -1,6 +1,6 @@
 package com.easy.architecture.factory;
 
-import com.easy.architecture.javaconfig.AppConfig;
+import com.easy.architecture.config.AppConfig;
 import org.springframework.beans.factory.BeanFactoryUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
