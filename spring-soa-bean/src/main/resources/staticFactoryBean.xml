@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="personFactory" class="com.easy.architecture.staticfactory.PersonFactory"/>
+    <bean id="chinese" factory-bean="personFactory" factory-method="getPerson">
+    <!-- 为实例工厂的getPerson()方法传参 -->
+    <constructor-arg value="chinese"/>
+    <!-- 调用setMsg()方法为msg属性注入参数值 -->
+    <property name="msg" value="我是中国人"/>
+    </bean>
+    <!-- 创建american Bean -->
+    <bean id="american" factory-bean="personFactory" factory-method="getPerson">
+    <constructor-arg value="american"/>
+    <property name="msg" value="我是美国人"/>
+    </bean>
+</beans>
