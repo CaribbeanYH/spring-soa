@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b294e8-0d73-4e25-a53d-9b72b507fea3" name="Changes" comment="" />
@@ -67,12 +67,14 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-soa-bean/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3697479" />
@@ -150,12 +152,29 @@
       <workItem from="1721842338818" duration="415000" />
       <workItem from="1721870951867" duration="10345000" />
       <workItem from="1721898523436" duration="5401000" />
-      <workItem from="1721916844293" duration="37000" />
+      <workItem from="1721916844293" duration="315000" />
+      <workItem from="1721917687337" duration="32000" />
+      <workItem from="1721917939040" duration="30000" />
+      <workItem from="1721918032009" duration="39000" />
+      <workItem from="1721918081974" duration="9000" />
+      <workItem from="1721918159372" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
