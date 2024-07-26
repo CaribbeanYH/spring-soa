@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 指定class属性，通过构造方法创建Bean实例 -->
+    <bean id="heroCaoCao" name="heroCaoCao" class="com.easy.architecture.constructor.HeroCaoCao">
+        <!-- 通过调用setName方法，将曹操作为参数传入 -->
+        <property name="name" value="曹操"/>
+    </bean>
+
+    <bean class="com.easy.architecture.constructor.BusinessBeanInitPostProcessor"/>
+
+    <!--    &lt;!&ndash; 指定class属性，通过构造方法创建Bean实例 &ndash;&gt;-->
+    <!--    <bean id="heroCaoCao" name="heroCaoCao" class="com.easy.architecture.constructor.HeroCaoCao" scope="singleton" init-method="init">-->
+    <!--        &lt;!&ndash; 通过调用setName方法，将曹操作为参数传入 &ndash;&gt;-->
+    <!--        <property name="name" value="曹操"/>-->
+    <!--    </bean>-->
+
+    <!--    &lt;!&ndash; 指定class属性，通过构造方法创建Bean实例 &ndash;&gt;-->
+    <!--    <bean id="heroCaoCao" name="heroCaoCao" class="com.easy.architecture.constructor.HeroCaoCao" scope="prototype">-->
+    <!--        &lt;!&ndash; 通过调用setName方法，将曹操作为参数传入 &ndash;&gt;-->
+    <!--        <property name="name" value="曹操"/>-->
+    <!--    </bean>-->
+</beans>
