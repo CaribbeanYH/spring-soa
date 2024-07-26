@@ -12,5 +12,8 @@
         <module name="spring-soa-mvc" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-soa-mvc" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

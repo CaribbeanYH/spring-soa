@@ -5,64 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b294e8-0d73-4e25-a53d-9b72b507fea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/ioc-core.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/ioc.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/spring.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/三级缓存.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/循环依赖.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/LazyRoleImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/staregy/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/constructor/BusinessBeanInitPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/springFactory/LvBu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-soa-mvc/src/main/java/Hero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-soa-mvc/src/main/resources/spring-xml-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-soa-mvc/src/test/java/Hero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/factory/BusinessHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/factory/BusinessHandlerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/ProxyManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/ContextListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/ContextListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/ContextStopLIstener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/ContextStopLIstener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/JavaConfigTestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/SpringConfigIocApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/PersonServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/SelfEvenetPub.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/SelfEvenetPub.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/SelfEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/SelfEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/event/SelfEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/event/SelfEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/staregy/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/staregy/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/staregy/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/javaconfig/staregy/Teacher.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/config/staregy/Teacher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/staticfactory/American.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/staticfactory/Chinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/springFactory/YuJi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/staticfactory/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/springFactory/Hero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/staticfactory/PersonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/springFactory/HeroFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/staticfactory/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/java/com/easy/architecture/springFactory/SpringFactoryIocApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/resources/spring-xml-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/resources/spring-xml-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/src/main/resources/staticFactoryBean.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/src/main/resources/spring-factory.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/constructor/SpringAnnotationIocApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/constructor/SpringAnnotationIocApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/excellent/BusinessDataType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/excellent/BusinessType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/excellent/HandlerInterface.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/excellent/SimpleBusinessFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/excellent/Type1Handler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/AppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/Company.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/ContextListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/ContextStopLIstener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/JavaConfigTestMain.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/PersonServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/SelfEvenetPub.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/SelfEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/event/SelfEvent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/staregy/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/staregy/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/javaconfig/staregy/Teacher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/staticfactory/American.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/staticfactory/Chinese.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/staticfactory/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/staticfactory/PersonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/com/easy/architecture/staticfactory/TestApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/spring-xml-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-bean/target/classes/spring-xml-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-bean/target/classes/staticFactoryBean.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/easy/architecture/bean/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/easy/architecture/springbean/SpringBeanMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-root.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +47,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="$PROJECT_DIR$/../../env/repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../env/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="$PROJECT_DIR$/../../env/apache-maven-3.6.0/conf/settings.xml" />
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../apache-maven-3.8.4/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -128,7 +74,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-soa-bean/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-soa-mvc/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -143,6 +89,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-soa-mvc/src/main/resources" />
+      <recent name="$PROJECT_DIR$/spring-soa-mvc/src/test/java" />
+      <recent name="$PROJECT_DIR$/spring-soa-mvc/src/main/java" />
       <recent name="$PROJECT_DIR$/spring-soa-bean/src/main/resources" />
       <recent name="$PROJECT_DIR$/spring-soa-bean/src/main/java" />
     </key>
@@ -220,7 +169,6 @@
       <list>
         <item itemvalue="Application.SpringFactoryIocApp" />
         <item itemvalue="Application.SpringConfigIocApp" />
-        <item itemvalue="Application.SpringAnnotationIocApp (1)" />
         <item itemvalue="Application.SpringAnnotationIocApp" />
         <item itemvalue="Application.SpringBeanMain" />
       </list>
@@ -250,6 +198,7 @@
       <workItem from="1721924374449" duration="17000" />
       <workItem from="1721924521829" duration="218000" />
       <workItem from="1721925022659" duration="5005000" />
+      <workItem from="1721961115872" duration="173000" />
     </task>
     <servers />
   </component>
