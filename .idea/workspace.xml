@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b294e8-0d73-4e25-a53d-9b72b507fea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/xml/EasyArchiectureAOP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/xml/EasyArchiectureLogging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/xml/SpringAopXmlConfigApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/Logging.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/TestAopMain.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/EasyMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/EasyMonitorAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/AopConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/AopConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/AopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/AopTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/SpringAopAnnotationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/SpringAopTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/spring-aop-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/spring-xml-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/AopTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/EasyAOP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/SpringAopAnnotationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/SpringAopAnnotationApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/EasyArchiecture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/UserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,8 +101,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easy.archiecture.aopannotation" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.SpringAopXmlConfigApp">
+  <component name="RunManager" selected="Application.SpringAopAnnotationApp">
     <configuration name="SpringAnnotationIocApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.easy.architecture.annotation.SpringAnnotationIocApp" />
       <module name="spring-soa-bean" />
@@ -134,12 +132,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringAopXmlConfigApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.easy.archiecture.xml.SpringAopXmlConfigApp" />
+    <configuration name="SpringAopAnnotationApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.easy.archiecture.aopannotation.SpringAopAnnotationApp" />
       <module name="spring-soa-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.easy.archiecture.xml.*" />
+          <option name="PATTERN" value="com.easy.archiecture.aopannotation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,12 +145,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBeanMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.easy.architecture.springbean.SpringBeanMain" />
-      <module name="spring-soa" />
+    <configuration name="SpringAopXmlConfigApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.easy.archiecture.xml.SpringAopXmlConfigApp" />
+      <module name="spring-soa-aop" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.easy.architecture.springbean.*" />
+          <option name="PATTERN" value="com.easy.archiecture.xml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,11 +186,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SpringAopAnnotationApp" />
         <item itemvalue="Application.SpringAopXmlConfigApp" />
         <item itemvalue="Application.SpringFactoryIocApp" />
         <item itemvalue="Application.SpringConfigIocApp" />
         <item itemvalue="Application.SpringAnnotationIocApp" />
-        <item itemvalue="Application.SpringBeanMain" />
       </list>
     </recent_temporary>
   </component>
@@ -220,7 +218,7 @@
       <workItem from="1721924374449" duration="17000" />
       <workItem from="1721924521829" duration="218000" />
       <workItem from="1721925022659" duration="5005000" />
-      <workItem from="1721961115872" duration="1932000" />
+      <workItem from="1721961115872" duration="3222000" />
     </task>
     <servers />
   </component>

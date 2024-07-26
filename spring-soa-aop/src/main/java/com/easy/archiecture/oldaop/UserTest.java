@@ -43,7 +43,7 @@ public class UserTest {
 
     @Override
     public String toString() {
-        return "User{" +
+        return "EasyArchiecture{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age +
