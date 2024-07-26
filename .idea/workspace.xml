@@ -10,11 +10,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b294e8-0d73-4e25-a53d-9b72b507fea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/servlet-applet/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/java/com/easy/archiecture/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/classes/com/easy/archiecture/HelloServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/aspectjweaver-1.9.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/fastjson-1.2.83.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/gson-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/logback-core-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/lombok-1.18.34.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/slf4j-simple-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-aop-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-beans-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-context-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-core-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-expression-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-jcl-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-web-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/lib/spring-webmvc-5.2.9.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/servlet_applet_war_exploded/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +94,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -93,7 +109,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3697479" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -116,7 +132,7 @@
       <recent name="com.easy.archiecture.aopannotation" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.73">
+  <component name="RunManager" selected="Tomcat Server.servlet">
     <configuration name="SpringAnnotationIocApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.easy.architecture.constructor.SpringAnnotationIocApp" />
       <module name="spring-soa-bean" />
@@ -195,18 +211,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 8.5.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/servlet_applet_war_exploded/" />
+    <configuration name="servlet" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.73" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/servlet_applet_war/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="servlet-applet:war exploded">
+        <artifact name="servlet-applet:war">
           <settings>
-            <option name="CONTEXT_PATH" value="/servlet_applet_war_exploded" />
+            <option name="CONTEXT_PATH" value="/servlet_applet_war" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="4794c148-dc0f-463a-8ae3-9a5f64a05d6a" />
+        <option name="BASE_DIRECTORY_NAME" value="f6b833bf-5528-4c12-9537-c4c1fa7dc3ee" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -214,10 +230,10 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51208" />
+        <option name="DEBUG_PORT" value="62578" />
       </RunnerSettings>
       <RunnerSettings RunnerId="Debug with VisualVM">
-        <option name="DEBUG_PORT" value="51209" />
+        <option name="DEBUG_PORT" value="62579" />
       </RunnerSettings>
       <RunnerSettings RunnerId="JProfiler">
         <option name="jreHome" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home" />
@@ -330,7 +346,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="servlet-applet:war exploded" />
+          <artifact name="servlet-applet:war" />
         </option>
       </method>
     </configuration>
@@ -340,7 +356,7 @@
       <item itemvalue="Application.SpringAspectAopXmlConfigApp" />
       <item itemvalue="Application.SpringConfigIocApp" />
       <item itemvalue="Application.SpringFactoryIocApp" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.73" />
+      <item itemvalue="Tomcat Server.servlet" />
     </list>
     <recent_temporary>
       <list>
@@ -376,7 +392,7 @@
       <workItem from="1721924374449" duration="17000" />
       <workItem from="1721924521829" duration="218000" />
       <workItem from="1721925022659" duration="5005000" />
-      <workItem from="1721961115872" duration="11040000" />
+      <workItem from="1721961115872" duration="12502000" />
     </task>
     <servers />
   </component>
