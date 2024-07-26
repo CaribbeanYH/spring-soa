@@ -3,11 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="userServiceImpl" class="com.easy.archiecture.springaop.oldaop.UserServiceImpl"/>
+    <bean id="creatorImpl" class="com.easy.archiecture.aspectjaop.ICreatorImpl"/>
 
     <!--定义两个 advice-->
-    <bean id="logArgsAdvice" class="com.easy.archiecture.springaop.oldaop.LogArgsAdvice"/>
-    <bean id="logResultAdvice" class="com.easy.archiecture.springaop.oldaop.LogResultAdvice"/>
+    <bean id="logArgsAdvice" class="com.easy.archiecture.aspectjaop.LogArgsAdvice"/>
+    <bean id="logResultAdvice" class="com.easy.archiecture.aspectjaop.LogResultAdvice"/>
+    <bean id="easyInterceptor" class="com.easy.archiecture.aspectjaop.EasyInterceptor"/>
 
     <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
         <!--配置拦截器，这里可以配置 advice、advisor、interceptor-->
@@ -15,8 +16,9 @@
             <list>
                 <value>logArgsAdvice</value>
                 <value>logResultAdvice</value>
+                <value>easyInterceptor</value>
             </list>
         </property>
-        <property name="beanNames" value="*ServiceImpl"/>
+        <property name="beanNames" value="*Impl"/>
     </bean>
 </beans>

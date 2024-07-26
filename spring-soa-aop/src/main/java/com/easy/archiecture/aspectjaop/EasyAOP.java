@@ -1,6 +1,13 @@
-package com.easy.archiecture.oldaop;
+package com.easy.archiecture.aspectjaop;
 
-public class UserTest {
+/**
+ * @author yanghai10
+ * @ClassName
+ * @Description
+ * @date 2024/7/25 14:44
+ */
+public class EasyAOP {
+
     private String firstName;
 
     private String lastName;

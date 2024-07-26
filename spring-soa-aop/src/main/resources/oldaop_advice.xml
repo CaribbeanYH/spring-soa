@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userServiceImpl" class="com.easy.archiecture.springaop.oldaop.UserServiceImpl"/>
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+       xmlns:aop="http://www.springframework.org/schema/aop">
+
+    <bean id="creator" class="com.easy.archiecture.aspectjaop.ICreatorImpl"/>
 
     <!--定义两个 advice-->
-    <bean id="logArgsAdvice" class="com.easy.archiecture.springaop.oldaop.LogArgsAdvice"/>
-    <bean id="logResultAdvice" class="com.easy.archiecture.springaop.oldaop.LogResultAdvice"/>
+    <bean id="logArgsAdvice" class="com.easy.archiecture.aspectjaop.LogArgsAdvice"/>
+    <bean id="logResultAdvice" class="com.easy.archiecture.aspectjaop.LogResultAdvice"/>
 
-    <bean id="userServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <bean id="creatorProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
         <!--代理的接口-->
         <property name="proxyInterfaces">
             <list>
-                <value>com.easy.archiecture.springaop.oldaop.UserService</value>
+                <value>com.easy.archiecture.aspectjaop.ICreator</value>
             </list>
         </property>
         <!--代理的具体实现-->
-        <property name="target" ref="userServiceImpl"/>
-
+        <property name="target" ref="creator"/>
         <!--配置拦截器，这里可以配置 advice、advisor、interceptor, 这里先介绍 advice-->
         <property name="interceptorNames">
             <list>
@@ -26,4 +27,6 @@
             </list>
         </property>
     </bean>
+    <!--CGLIB-->
+    <!--    <aop:aspectj-autoproxy proxy-target-class="true"/>-->
 </beans>

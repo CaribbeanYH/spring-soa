@@ -2,35 +2,35 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="userServiceImpl" class="com.easy.archiecture.springaop.oldaop.UserServiceImpl"/>
+    <bean id="creator" class="com.easy.archiecture.aspectjaop.ICreatorImpl"/>
 
     <!--定义两个 advice-->
-    <bean id="logArgsAdvice" class="com.easy.archiecture.springaop.oldaop.LogArgsAdvice"/>
-    <bean id="logResultAdvice" class="com.easy.archiecture.springaop.oldaop.LogResultAdvice"/>
+    <bean id="logArgsAdvice" class="com.easy.archiecture.aspectjaop.LogArgsAdvice"/>
+    <bean id="logResultAdvice" class="com.easy.archiecture.aspectjaop.LogResultAdvice"/>
 
     <!--定义一个只拦截queryUser方法的 advisor-->
     <bean id="logCreateAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
         <!--advisor 实例的内部会有一个 advice-->
-        <property name="advice" ref="logArgsAdvice" />
+        <property name="advice" ref="logArgsAdvice"/>
         <!--只有下面这一个方法才会被拦截-->
-        <property name="mappedNames" value="queryUser" />
+        <property name="mappedNames" value="queryEasyAOP"/>
     </bean>
     <bean id="logReturnAdvisor" class="org.springframework.aop.support.NameMatchMethodPointcutAdvisor">
         <!--advisor 实例的内部会有一个 advice-->
-        <property name="advice" ref="logResultAdvice" />
+        <property name="advice" ref="logResultAdvice"/>
         <!--只有下面这一个方法才会被拦截-->
-        <property name="mappedNames" value="queryUser" />
+        <property name="mappedNames" value="queryEasyAOP"/>
     </bean>
 
-    <bean id="userServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+    <bean id="creatorProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
         <!--代理的接口-->
         <property name="proxyInterfaces">
             <list>
-                <value>com.easy.archiecture.springaop.oldaop.UserService</value>
+                <value>com.easy.archiecture.aspectjaop.ICreator</value>
             </list>
         </property>
         <!--代理的具体实现-->
-        <property name="target" ref="userServiceImpl"/>
+        <property name="target" ref="creator"/>
 
         <!--配置拦截器，这里可以配置 advice、advisor、interceptor-->
         <property name="interceptorNames">
