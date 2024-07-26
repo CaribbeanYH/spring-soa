@@ -17,6 +17,7 @@ public class SpringAspectAopXmlConfigApp {
         runAutoProxy();
     }
 
+    //通知(Advice)
     public static void runAopAdvice() {
         ApplicationContext context = new ClassPathXmlApplicationContext("oldaop_advice.xml");
         // 我们这里要取 AOP 代理：creatorProxy，这非常重要
@@ -25,6 +26,7 @@ public class SpringAspectAopXmlConfigApp {
         ICreator.queryEasyAOP();
     }
 
+    //Advisor(高级通知) = Advice(通知) + Pointcut(切入点)
     public static void runAopAdvisor() {
         // 启动 Spring 的 IOC 容器
         ApplicationContext context = new ClassPathXmlApplicationContext("oldaop_advisor.xml");
@@ -34,6 +36,7 @@ public class SpringAspectAopXmlConfigApp {
         ICreator.queryEasyAOP();
     }
 
+    //AutoProxy
     public static void runAutoProxy() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("oldaop_autoproxy.xml");
         ICreator bean = context.getBean(ICreator.class);
