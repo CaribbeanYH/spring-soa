@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 public class AopTest {
 
 
-    @Pointcut("execution(* com.easy.archiecture.springaop.aopannotation..*.*(..))") // the pointcut expression
+    @Pointcut("execution(* com.easy.archiecture.aopannotation..*.*(..))") // the pointcut expression
     private void anyOldTransfer() {
     } // the pointcut signature
 
 
-    @Before("com.easy.archiecture.springaop.aopannotation.AopTest.anyOldTransfer()")
+    @Before("com.easy.archiecture.aopannotation.AopTest.anyOldTransfer()")
 //    @After()
 //    @Around()
     private void addBeforePrint() {
