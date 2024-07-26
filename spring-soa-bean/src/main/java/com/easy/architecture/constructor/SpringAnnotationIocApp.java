@@ -70,3 +70,11 @@ public void refresh() throws BeansException, IllegalStateException {
 	}
 }
  */
+
+/*
+3、IOC 容器的作用？
+依赖处理，通过依赖查找或者依赖注入
+管理托管的资源（Java Bean 或其他资源）的生命周期
+管理配置（容器配置、外部化配置、托管的资源的配置）
+Spring IOC 负责创建对象，管理对象（通过依赖注入（DI）装配对象、配置对象）并且管理这些对象的整个生命周期。
+ */
