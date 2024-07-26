@@ -13,6 +13,8 @@ import java.io.Serializable;
  */
 public class HeroCaoCao implements Serializable, InitializingBean {
 
+    private static final long serialVersionUID = 241232994630526084L;
+
     private String name;
 
     public HeroCaoCao() {
