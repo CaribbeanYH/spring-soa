@@ -1,25 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="servlet-applet:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9b294e8-0d73-4e25-a53d-9b72b507fea3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/advice-advisor-advised.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/spring-or-aspect.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-applet/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/java/com/easy/archiecture/HelloServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/servlet-applet/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/SpringAopAnnotationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aopannotation/SpringAopAnnotationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/DemoInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/EasyInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/LogArgsAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/LogArgsAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/LogResultAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/LogResultAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/TestOldAopMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/SpringAspectAopXmlConfigApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/ICreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/ICreatorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/oldaop/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture/aspectjaop/EasyAOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_advice.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_advice.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_advisor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_advisor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_autoproxy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-soa-aop/src/main/resources/oldaop_autoproxy.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +46,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="tz61e1nf" />
@@ -85,13 +87,13 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-soa-aop/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/servlet-applet/src/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3697479" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -100,20 +102,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/servlet-applet/src/main" />
       <recent name="$PROJECT_DIR$/spring-soa-aop/src/main/resources" />
       <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/spring-soa-aop/src/main/java/com/easy/archiecture" />
       <recent name="$PROJECT_DIR$/spring-soa-aop" />
-      <recent name="$PROJECT_DIR$/spring-soa-mvc/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easy.archiecture" />
       <recent name="com.easy.archiecture.aopannotation" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SpringAspectAopXmlConfigApp">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.73">
     <configuration name="SpringAnnotationIocApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.easy.architecture.constructor.SpringAnnotationIocApp" />
       <module name="spring-soa-bean" />
@@ -192,6 +195,153 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 8.5.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/servlet_applet_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="servlet-applet:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/servlet_applet_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="4794c148-dc0f-463a-8ae3-9a5f64a05d6a" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51208" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Debug with VisualVM">
+        <option name="DEBUG_PORT" value="51209" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JProfiler">
+        <option name="jreHome" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_311.jdk/Contents/Home" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug with VisualVM">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JProfiler">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run with VisualVM">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="servlet-applet:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SpringAopAnnotationApp" />
+      <item itemvalue="Application.SpringAopXmlConfigApp" />
+      <item itemvalue="Application.SpringAspectAopXmlConfigApp" />
+      <item itemvalue="Application.SpringConfigIocApp" />
+      <item itemvalue="Application.SpringFactoryIocApp" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.73" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.SpringAspectAopXmlConfigApp" />
@@ -226,7 +376,7 @@
       <workItem from="1721924374449" duration="17000" />
       <workItem from="1721924521829" duration="218000" />
       <workItem from="1721925022659" duration="5005000" />
-      <workItem from="1721961115872" duration="7058000" />
+      <workItem from="1721961115872" duration="11040000" />
     </task>
     <servers />
   </component>
