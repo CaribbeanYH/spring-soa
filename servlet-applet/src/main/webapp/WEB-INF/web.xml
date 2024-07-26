@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-<!--    <servlet>-->
-<!--        <servlet-name>controlServlet</servlet-name>-->
-<!--        <servlet-class>com.xxx.ControlServlet</servlet-class>-->
-<!--    </servlet>-->
-<!--    <servlet-mapping>-->
-<!--        <servlet-name>controlServlet</servlet-name>-->
-<!--        <url-pattern>*.do</url-pattern>-->
-<!--    </servlet-mapping>-->
+    <servlet>
+        <servlet-name>heroServlet</servlet-name>
+        <servlet-class>com.easy.archiecture.HeroServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>heroServlet</servlet-name>
+        <url-pattern>hero.do</url-pattern>
+    </servlet-mapping>
 </web-app>
