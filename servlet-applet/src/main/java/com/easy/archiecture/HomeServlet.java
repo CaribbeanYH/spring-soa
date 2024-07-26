@@ -9,6 +9,9 @@ import java.io.PrintWriter;
 
 @WebServlet(name = "helloServlet", value = "/home-servlet")
 public class HomeServlet extends HttpServlet {
+
+    private static final long serialVersionUID = 1962131245372590902L;
+
     private String message;
 
     public void init() {

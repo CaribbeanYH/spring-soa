@@ -10,6 +10,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>heroServlet</servlet-name>
-        <url-pattern>hero.do</url-pattern>
+        <url-pattern>/hero</url-pattern>
     </servlet-mapping>
 </web-app>

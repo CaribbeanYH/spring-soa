@@ -9,5 +9,6 @@
 </h1>
 <br/>
 <a href="home-servlet">Hello Servlet</a>
+<a href="hero">黄忠</a>
 </body>
 </html>
