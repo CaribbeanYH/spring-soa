@@ -22,15 +22,23 @@ public class SpringMvcContainer {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(Integer.getInteger("port", 8080));
         tomcat.getConnector();
-        Context context = tomcat.addContext("/", System.getProperty("java.io.tmpdir"));
-//        Context context = tomcat.addWebapp("", new File("src/main/webapp").getAbsolutePath());
-//        WebResourceRoot resources = new StandardRoot(context);
-//        resources.addPreResources(
-//                new DirResourceSet(resources, "/WEB-INF/classes", new File("spring-mvc/target/classes").getAbsolutePath(), "/"));
-//        context.setResources(resources);
-        // 注册listener
+//        Context context = tomcat.addContext("/", System.getProperty("java.io.tmpdir"));
+        Context context = tomcat.addWebapp("/", new File("spring-soa-mvc/src/main/resources").getAbsolutePath());
+        WebResourceRoot resources = new StandardRoot(context);
+        resources.addPreResources(
+                new DirResourceSet(resources, "/WEB-INF/classes", new File("spring-soa-mvc/target/classes").getAbsolutePath(), "/"));
+        context.setResources(resources);
+        //注册listener
         context.addLifecycleListener((LifecycleListener) Class.forName(tomcat.getHost().getConfigClass()).newInstance());
         tomcat.start();
         tomcat.getServer().await();
     }
+
+    /**
+     * addContext()与addWebapp()这两种方法都是向嵌入式tomcat添加web应用程序。
+     *
+     * addContext()需要配置相关所有内容，比如配置默认的Servlet，否则将无法访问静态资源。
+     *
+     * addWebapp()可以理解为拥有自动配置功能，同时我们也可以通过次方法添加Servlet，指定静态资源路径
+     */
 }
