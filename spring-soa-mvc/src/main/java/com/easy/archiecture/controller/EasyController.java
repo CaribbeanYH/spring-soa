@@ -15,6 +15,6 @@ public class EasyController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String showForm() {
-        return "index";
+        return "mvc";
     }
 }
