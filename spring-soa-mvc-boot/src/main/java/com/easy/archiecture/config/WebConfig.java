@@ -36,7 +36,7 @@ public class WebConfig implements WebMvcConfigurer {
     public InternalResourceViewResolver resourceViewResolver() {
         InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
         //请求页面文件的前缀地址
-        internalResourceViewResolver.setPrefix("spring-soa-mvc-boot/src/main/webapp/views/");
+        internalResourceViewResolver.setPrefix("views/");
         //请求页面文件的后缀
         internalResourceViewResolver.setSuffix(".html");
         return internalResourceViewResolver;
