@@ -20,6 +20,4 @@
             <bean class="com.easy.archiecture.interceptor.AuthInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
-    <!--显式Controller参数校验器-->
-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
 </beans>

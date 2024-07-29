@@ -1,1 +1,1 @@
-//springmvc
+//springmvc 基于web.xml的配置

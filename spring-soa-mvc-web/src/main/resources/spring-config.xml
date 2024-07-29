@@ -19,6 +19,5 @@
     <!-- 配置开启@Aspect支持 开启动态代理-->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <!--显式Controller参数校验器-->
-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
-    </bean>
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
 </beans>
