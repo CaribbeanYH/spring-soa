@@ -18,6 +18,7 @@
             classpath:spring-config.xml
         </param-value>
     </context-param>
+
     <!--编码过滤器 -->
     <filter>
         <filter-name>setCharacterEncoding</filter-name>
@@ -46,9 +47,10 @@
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--DispatchServlet 持有的 WebApplicationContext-->
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>classpath:spring-mvc.xml</param-value>
+            <param-value>classpath:spring-config.xml</param-value>
         </init-param>
         <!-- 启动动优先级，越小越早加载 -->
         <load-on-startup>1</load-on-startup>
