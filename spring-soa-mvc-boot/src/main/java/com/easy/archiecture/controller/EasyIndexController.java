@@ -12,12 +12,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 2024/7/28 16:44
  */
 @Controller
-@ResponseBody
-@RequestMapping("/home")
-public class EasyController {
+public class EasyIndexController {
 
-    @RequestMapping(value = "/index")
-    public String home() {
-        return "name";
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+    public String index() {
+        return "index";
     }
 }
