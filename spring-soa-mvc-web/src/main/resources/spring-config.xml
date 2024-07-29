@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--
+    除了具有上面的功能之外，还具有自动将带有@component,@service,@Repository等注解的对象注册到spring容器中的功能
+    -->
+    <context:component-scan base-package="com.easy.archiecture"/>
+    <!--是用于激活那些已经在spring容器里注册过的bean上面的注解，也就是显示的向Spring注册
+    AutowiredAnnotationBeanPostProcessor
+    CommonAnnotationBeanPostProcessor
+    PersistenceAnnotationBeanPostProcessor
+    RequiredAnnotationBeanPostProcessor
+    仅能够在已经在已经注册过的bean上面起作用。对于没有在spring容器中注册的bean，它并不能执行任何操作。
+    -->
+    <context:annotation-config/>
+    <!-- 配置开启@Aspect支持 开启动态代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!--显式Controller参数校验器-->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+    </bean>
+</beans>
