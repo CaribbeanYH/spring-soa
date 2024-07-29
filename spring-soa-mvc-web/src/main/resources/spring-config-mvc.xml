@@ -9,7 +9,7 @@
 	                    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
     <!--扫描web层controller-->
-    <context:component-scan base-package="com.easy.archiecture.controller"/>
+    <context:component-scan base-package="com.easy.archiecture"/>
     <!-- 配置开启@Aspect支持 开启动态代理-->
     <aop:aspectj-autoproxy proxy-target-class="true"/>
     <mvc:annotation-driven/>
