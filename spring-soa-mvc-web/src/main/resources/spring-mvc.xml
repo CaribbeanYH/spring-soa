@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
-	                    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+	                    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
     <!--主要就是为了Spring MVC来用的，提供Controller请求转发，json自动转换等功能-->
     <mvc:annotation-driven/>
     <!--
@@ -11,10 +11,15 @@
     mvc:default-servlet-handler/的作用就是过滤静态资源请求,由服务器默认的Servlet程序处理
     -->
     <mvc:default-servlet-handler/>
+    <!-- 配置开启@Aspect支持 -->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+    <!--拦截器的配置-->
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <bean class="com.easy.archiecture.interceptor.AuthInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
+    <!--显式Controller参数校验器-->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
 </beans>
