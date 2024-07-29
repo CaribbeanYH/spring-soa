@@ -16,7 +16,7 @@ import java.io.File;
  * @date 2024/7/28 19:09
  */
 @SuppressWarnings("ALL")
-public class SpringMvcContainer {
+public class SpringMvcBoot {
     public static void main(String[] args) throws Exception {
         // 内置tomcat
         Tomcat tomcat = new Tomcat();
