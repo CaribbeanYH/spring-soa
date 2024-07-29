@@ -22,15 +22,14 @@ public class SpringMvcContainer {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(Integer.getInteger("port", 8080));
         tomcat.getConnector();
-//        Context context = tomcat.addContext("/", System.getProperty("java.io.tmpdir"));
-        Context context = tomcat.addWebapp("/", new File("spring-soa-mvc/src/main/resources").getAbsolutePath());
+        String webAppContextPath = new File("spring-soa-mvc-boot/src/main/webapp").getAbsolutePath();
+        Context context = tomcat.addWebapp("/", webAppContextPath);
         WebResourceRoot resources = new StandardRoot(context);
-        resources.addPreResources(
-                new DirResourceSet(resources, "/WEB-INF/classes", new File("spring-soa-mvc/target/classes").getAbsolutePath(), "/"));
+        File additionWebInfClasses = new File("spring-soa-mvc-boot/target/classes");
+        resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes", additionWebInfClasses.getAbsolutePath(), "/"));
         context.setResources(resources);
-        //注册listener
-        context.addLifecycleListener((LifecycleListener) Class.forName(tomcat.getHost().getConfigClass()).newInstance());
         tomcat.start();
+        // 服务阻塞等待
         tomcat.getServer().await();
     }
 

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class EasyController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
-    public String showForm() {
+    public String home() {
         return "index";
     }
 }

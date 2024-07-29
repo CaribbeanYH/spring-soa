@@ -11,9 +11,9 @@
     <modules>
         <module>spring-soa-bean</module>
         <module>spring-soa-aop</module>
-        <module>spring-soa-mvc</module>
         <module>servlet-applet</module>
         <module>spring-soa-mvc-web</module>
+        <module>spring-soa-mvc-boot</module>
     </modules>
 
     <properties>
