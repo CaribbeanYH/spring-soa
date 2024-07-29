@@ -27,7 +27,7 @@ public class HeroController {
     private IHeroService iHeroService;
 
     @RequestMapping(value = "/heroInfo", method = RequestMethod.GET)
-    public ResultDTO<HeroVO> heroInfo(@RequestParam(value = "heroId", required = false) Long heroId) {
+    public ResultDTO<HeroVO> heroInfo(Long heroId) {
         if (null == heroId || heroId <= 0) {
             return ResultDTO.buildFail(ResultCodeEnum.PARAMS_IS_NULL.getCode(), ResultCodeEnum.PARAMS_IS_NULL.getMessage());
         }
