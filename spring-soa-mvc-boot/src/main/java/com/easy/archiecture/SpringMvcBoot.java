@@ -21,10 +21,10 @@ public class SpringMvcBoot {
         Tomcat tomcat = new Tomcat();
         tomcat.setPort(Integer.getInteger("port", 8080));
         tomcat.getConnector();
-        String webAppContextPath = new File("spring-soa-mvc-boot/src/main/webapp").getAbsolutePath();
+        String webAppContextPath = new File("src/main/webapp").getAbsolutePath();
         Context context = tomcat.addWebapp("/", webAppContextPath);
         WebResourceRoot resources = new StandardRoot(context);
-        File additionWebInfClasses = new File("spring-soa-mvc-boot/target/classes");
+        File additionWebInfClasses = new File("target/classes");
         resources.addPreResources(new DirResourceSet(resources, "/WEB-INF/classes", additionWebInfClasses.getAbsolutePath(), "/"));
         context.setResources(resources);
         tomcat.start();
