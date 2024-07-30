@@ -6,10 +6,10 @@ import org.springframework.context.annotation.Configuration;
 /**
  * @author yanghai10
  * @ClassName
- * @Description web根容器
- * @date 2024/7/29 20:23
+ * @Description
+ * @date 2024/7/30 10:37
  */
 @Configuration
 @ComponentScan(basePackages = "com.easy.archiecture")
-public class WebRoot {
+public class AppConfig {
 }

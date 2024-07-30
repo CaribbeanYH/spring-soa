@@ -22,7 +22,6 @@ import java.util.List;
  */
 @EnableWebMvc
 @Configuration
-@ComponentScan(basePackages = "com.easy.archiecture.controller")
 @EnableAspectJAutoProxy(proxyTargetClass = true) //使用CGlib的方式来实现动态代理
 public class WebConfig implements WebMvcConfigurer {
 
@@ -42,13 +41,14 @@ public class WebConfig implements WebMvcConfigurer {
         return internalResourceViewResolver;
     }
 
+    //静态资源访问
+    @Override
+    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        configurer.enable();
+    }
+
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(new MappingJackson2HttpMessageConverter());
     }
-
-//    @Override
-//    public void configureViewResolvers(ViewResolverRegistry registry) {
-//        registry.viewResolver(initViewResolver());
-//    }
 }
