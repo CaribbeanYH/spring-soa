@@ -1,9 +1,13 @@
 package com.easy.archiecture.controller;
 
+import com.easy.archiecture.bean.BootModel;
+import com.easy.archiecture.bean.ResultDTO;
+import com.easy.archiecture.service.IBootService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.annotation.Resource;
 
 /**
  * @author yanghai
@@ -16,8 +20,16 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("/home")
 public class EasyController {
 
+    @Resource
+    private IBootService iBootService;
+
     @RequestMapping(value = "/index")
     public String home() {
         return "name";
+    }
+
+    @RequestMapping(value = "/boot")
+    public ResultDTO<BootModel> boot() {
+        return ResultDTO.buildSuccess(iBootService.queryBootInfo());
     }
 }

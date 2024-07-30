@@ -23,7 +23,6 @@ import java.util.List;
  */
 @EnableWebMvc
 @Configuration
-@EnableAspectJAutoProxy(proxyTargetClass = true) //使用CGlib的方式来实现动态代理
 public class WebConfig implements WebMvcConfigurer {
 
     //处理页面路径
@@ -55,6 +54,7 @@ public class WebConfig implements WebMvcConfigurer {
         converters.add(new MappingJackson2HttpMessageConverter());
     }
 
+    //添加拦截器
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(initMvcInterceptor());
