@@ -1,6 +1,7 @@
 package com.easy.archiecture.webApplication;
 
 import com.easy.archiecture.config.AppConfig;
+import com.easy.archiecture.fitler.CorsFilter;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -30,6 +31,8 @@ public class MvcBootWebApplicationInitializer implements WebApplicationInitializ
         // 创建 ContextLoaderListener
         // 用来管理 root WebApplicationContext 的生命周期：加载、初始化、销毁
         servletContext.addListener(new ContextLoaderListener(webApplicationContext));
+        //添加过滤器
+        servletContext.addFilter("corsFilter", new CorsFilter());
         // Creating a dispatcher servlet object
         DispatcherServlet dispatcherServlet = new DispatcherServlet(webApplicationContext);
         // Registering Dispatcher Servlet with Servlet

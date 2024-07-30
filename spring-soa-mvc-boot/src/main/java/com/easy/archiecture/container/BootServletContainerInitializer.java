@@ -49,4 +49,11 @@ public class BootServletContainerInitializer implements ServletContainerInitiali
             initializer.onStartup(servletContext);
         }
     }
+
+    /**
+     这个是 Servlet 3.0 的规范，新的 code-based 的配置方式。简单来说就是容器会去加载文件JAR包下
+     META-INF/services/javax.servlet.ServletContainerInitalizer 文件中声明的
+     ServletContainerInitalizer（SCI） 实现类，并调用他的 onStartup 方法，
+     可以通过 @HandlesTypes 注解将特定的 class 添加到 SCI。
+     */
 }

@@ -1,6 +1,7 @@
 package com.easy.archiecture.config;
 
 
+import com.easy.archiecture.interceptors.MvcInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -31,6 +32,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.viewResolver(resourceViewResolver());
     }
 
+    //配置视图解析器
     @Bean
     public InternalResourceViewResolver resourceViewResolver() {
         InternalResourceViewResolver internalResourceViewResolver = new InternalResourceViewResolver();
@@ -47,8 +49,19 @@ public class WebConfig implements WebMvcConfigurer {
         configurer.enable();
     }
 
+    //序列化
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         converters.add(new MappingJackson2HttpMessageConverter());
+    }
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(initMvcInterceptor());
+    }
+
+    @Bean
+    public MvcInterceptor initMvcInterceptor() {
+        return new MvcInterceptor();
     }
 }
