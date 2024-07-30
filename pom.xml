@@ -14,6 +14,7 @@
         <module>servlet-applet</module>
         <module>spring-soa-mvc-web</module>
         <module>spring-soa-mvc-boot</module>
+        <module>spring-soa-boot</module>
     </modules>
 
     <properties>
