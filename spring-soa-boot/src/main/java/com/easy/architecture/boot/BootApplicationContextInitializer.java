@@ -13,7 +13,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  */
 public class BootApplicationContextInitializer implements ApplicationContextInitializer<ConfigurableApplicationContext> {
 
-    private Logger logger = LoggerFactory.getLogger(BootApplicationContextInitializer.class);
+    private final Logger logger = LoggerFactory.getLogger(BootApplicationContextInitializer.class);
 
     @Override
     public void initialize(ConfigurableApplicationContext configurableApplicationContext) {
