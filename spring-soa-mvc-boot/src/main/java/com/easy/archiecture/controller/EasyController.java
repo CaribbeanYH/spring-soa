@@ -23,7 +23,7 @@ public class EasyController {
     @Resource
     private IBootService iBootService;
 
-    @RequestMapping(value = "/index")
+    @RequestMapping(value = "/name")
     public String home() {
         return "name";
     }
