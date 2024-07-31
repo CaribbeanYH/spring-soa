@@ -1,6 +1,6 @@
 package com.easy.archiecture.service;
 
-import com.easy.archiecture.bean.BootModel;
+import com.easy.archiecture.bean.views.BootModel;
 
 /**
  * @author yanghai10

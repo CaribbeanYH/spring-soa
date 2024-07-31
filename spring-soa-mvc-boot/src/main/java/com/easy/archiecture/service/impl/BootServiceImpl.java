@@ -1,6 +1,6 @@
 package com.easy.archiecture.service.impl;
 
-import com.easy.archiecture.bean.BootModel;
+import com.easy.archiecture.bean.views.BootModel;
 import com.easy.archiecture.service.IBootService;
 import org.springframework.stereotype.Service;
 

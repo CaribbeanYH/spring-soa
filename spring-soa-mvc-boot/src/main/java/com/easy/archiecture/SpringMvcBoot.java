@@ -19,7 +19,7 @@ public class SpringMvcBoot {
     public static void main(String[] args) throws Exception {
         // 内置tomcat
         Tomcat tomcat = new Tomcat();
-        tomcat.setPort(Integer.getInteger("port", 8080));
+        tomcat.setPort(Integer.getInteger("port", 8088));
         tomcat.getConnector();
         String webAppContextPath = new File("src/main/webapp").getAbsolutePath();
         Context context = tomcat.addWebapp("/", webAppContextPath);

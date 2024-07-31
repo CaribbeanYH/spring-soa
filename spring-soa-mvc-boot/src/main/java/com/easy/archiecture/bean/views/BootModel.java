@@ -1,4 +1,4 @@
-package com.easy.archiecture.bean;
+package com.easy.archiecture.bean.views;
 
 import lombok.*;
 
