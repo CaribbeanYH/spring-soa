@@ -13,3 +13,4 @@ out
 *.pyc
 *.xlm
 *.iml
+/spring-soa-mvc-boot/dependency-reduced-pom.xml
