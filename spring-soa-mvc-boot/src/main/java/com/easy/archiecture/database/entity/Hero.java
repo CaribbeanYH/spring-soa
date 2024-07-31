@@ -29,17 +29,17 @@ public class Hero implements Serializable {
     /**
      * 名字
      */
-    private String name;
+    private String heroName;
 
     /**
      * 描述
      */
-    private String desc;
+    private String heroDesc;
 
     /**
      * 技能
      */
-    private String ability;
+    private String heroAbility;
 
     /**
      * 创建人
