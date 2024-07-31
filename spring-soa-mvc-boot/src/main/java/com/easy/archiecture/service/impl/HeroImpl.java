@@ -24,9 +24,7 @@ public class HeroImpl implements IHeroService {
 
     @Override
     public HeroVO queryHero(Long heroId) {
-        LambdaQueryWrapper<Hero> heroLambdaQueryWrapper = new LambdaQueryWrapper<>();
-        heroLambdaQueryWrapper.eq(Hero::getId, heroId);
-        Hero hero = heroMapper.selectOne(heroLambdaQueryWrapper);
+        Hero hero = heroMapper.selectById(heroId);
         if (null == hero) {
             return null;
         }
