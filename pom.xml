@@ -15,9 +15,11 @@
         <module>spring-soa-mvc-web</module>
         <module>spring-soa-mvc-boot</module>
         <module>spring-soa-boot</module>
+        <module>spring-soa-microservices</module>
     </modules>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <spring.version>5.2.9.RELEASE</spring.version>
@@ -83,8 +85,8 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>RELEASE</version>
-            <scope>compile</scope>
+            <version>1.18.34</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
