@@ -1,5 +1,3 @@
-springmvc的启动流程:可以参考：https://www.cnblogs.com/lbzhello/p/spring-mvc.html#init
-
 1、org.springframework.web.SpringServletContainerInitializer
 
 ```java
