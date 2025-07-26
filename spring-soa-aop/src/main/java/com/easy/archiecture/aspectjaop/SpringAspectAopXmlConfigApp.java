@@ -43,4 +43,32 @@ public class SpringAspectAopXmlConfigApp {
         bean.createEasyAOP("Tom", "Cruise", 55);
         bean.queryEasyAOP();
     }
+
+
+    /**
+     Advice: org.aopalliance.aop.Advice
+     “通知”，表示 Aspect 在特定的 Join point 采取的操作。包括 “around”, “before” and “after 等
+
+     Pointcut: org.springframework.aop.Pointcut
+     “切点”，它是用来匹配连接点 Join point 的，可以说"Pointcut"表示的是"Join point"的集合。
+
+     Advisor: org.springframework.aop.Advisor
+     “通知者”，它持有 Advice，是 Spring AOP 的一个基础接口。
+
+     Advised: org.springframework.aop.framework.Advised
+     AOP 代理工厂配置类接口。提供了操作和管理 Advice 和 Advisor 的能力
+
+
+     Advice: org.aopalliance.aop.Advice
+     “通知”，表示 Aspect 在特定的 Join point 采取的操作。包括 “around”, “before” and “after 等
+     Advice 大体上分为了三类：BeforeAdvice、MethodInterceptor、AfterAdvice
+     MethodInterceptor 是功能最强大的，是一个通用的方法拦截接口，它能够处理 BeforeAdvice、AroundAdvice、AfterAdvice、ThrowsAdvice、@Valid方法参数校验、@Async异步等
+
+     Advisor: org.springframework.aop.Advisor
+     “通知者”，它持有 Advice，是 Spring AOP 的一个基础接口。
+     它的子接口 PointcutAdvisor 是一个功能完善接口，它涵盖了绝大部分的 Advisor。
+
+     Advised: org.springframework.aop.framework.Advised
+     AOP 代理工厂配置类接口。提供了操作和管理 Advice 和 Advisor 的能力。
+     */
 }
