@@ -22,6 +22,8 @@ import java.util.Set;
 @Slf4j
 //@HandlesTypes(WebApplicationInitializer.class)
 public class BootServletContainerInitializer implements ServletContainerInitializer {
+
+    @Override
     public void onStartup(Set<Class<?>> webAppInitializerClasses, ServletContext servletContext) throws ServletException {
         List<WebApplicationInitializer> initializers = new LinkedList<>();
         if (webAppInitializerClasses != null) {

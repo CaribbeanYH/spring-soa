@@ -3,6 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <filter>
+        <filter-name>FirstFilter</filter-name>
+        <filter-class>com.easy.archiecture.filter.FirstFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FirstFilter</filter-name>
+        <!--指定拦截指定路径的资源URL-->
+        <url-pattern>/**</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FirstFilter</filter-name>
+        <!--指定拦截指定的ServletName-->
+        <servlet-name>heroServlet</servlet-name>
+        <!--调度程序-->
+        <!--<dispatcher>REQUEST</dispatcher>-->
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.easy.archiecture.listener.MyServletContextListener</listener-class>
+    </listener>
 
     <servlet>
         <servlet-name>heroServlet</servlet-name>
@@ -11,5 +31,14 @@
     <servlet-mapping>
         <servlet-name>heroServlet</servlet-name>
         <url-pattern>/hero</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>userServlet</servlet-name>
+        <servlet-class>com.easy.archiecture.UserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userServlet</servlet-name>
+        <url-pattern>/user/add</url-pattern>
     </servlet-mapping>
 </web-app>

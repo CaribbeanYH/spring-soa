@@ -29,7 +29,7 @@ public class SpringMvcBoot {
         context.setResources(resources);
         tomcat.start();
         // 创建一个URI实例
-        java.net.URI uri = java.net.URI.create("http://localhost:8080");
+        java.net.URI uri = java.net.URI.create("http://localhost:8088");
         // 获取当前系统桌面扩展
         java.awt.Desktop desktop = java.awt.Desktop.getDesktop();
         // 判断系统桌面是否支持要执行的功能

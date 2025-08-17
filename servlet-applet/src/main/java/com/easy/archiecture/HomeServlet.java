@@ -14,10 +14,12 @@ public class HomeServlet extends HttpServlet {
 
     private String message;
 
+    @Override
     public void init() {
         message = "Hello World!";
     }
 
+    @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -26,6 +28,7 @@ public class HomeServlet extends HttpServlet {
         out.println("</body></html>");
     }
 
+    @Override
     public void destroy() {
     }
 }

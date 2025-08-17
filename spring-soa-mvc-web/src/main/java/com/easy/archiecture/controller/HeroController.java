@@ -34,4 +34,10 @@ public class HeroController {
         HeroVO heroVO = iHeroService.queryHeroInfo(heroId);
         return ResultDTO.buildSuccess(heroVO);
     }
+
+    @RequestMapping(value = "/getView", method = RequestMethod.GET)
+    public String getView() {
+        return "view";
+    }
+    // /spring_soa_mvc_web_war/view
 }

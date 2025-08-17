@@ -1,0 +1,5 @@
+1、git clone https://github.com/spring-projects/spring-framework.git
+2、安装gradle推荐版本7.5.1，配置环境变量
+3、切换版本到5.3.X版本
+4、执行 ./gradlew :spring-oxm:compileTestJava
+5、导入idea，初始化工程
